@@ -1,5 +1,5 @@
 # Debugging_Binary_Counter_and_Accumulator_IP_using_ILA
-Xilinx VIVADO IP (Binary counter , Accumulator) is debugged using ILA(Integrated Logic Analsyzer) 
+Xilinx VIVADO IP (Binary counter , Accumulator) is debugged using ILA(Integrated Logic Analyzer) 
 
 # Block Design
 ![block_design](./block_design.jpg)
