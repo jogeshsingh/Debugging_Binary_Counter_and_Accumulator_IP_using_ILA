@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"ILA_DEBUG": {
+			"proto_instances": {
+			}
+		}
+	}
+}

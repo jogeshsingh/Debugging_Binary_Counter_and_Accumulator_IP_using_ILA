@@ -1,0 +1,263 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x464DD173E2BA8F5E",
+      "device": "xc7a35ticsg324-1L",
+      "gen_directory": "../../../../Axi_stream_debug_ILA.gen/sources_1/bd/ILA_DEBUG",
+      "name": "ILA_DEBUG",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "c_accum_0": "",
+      "c_counter_binary_0": "",
+      "xlconstant_0": "",
+      "ila_0": "",
+      "register_0": ""
+    },
+    "ports": {
+      "LOAD": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "SCLR": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "i_clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "SCLR",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "ILA_DEBUG_i_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "c_accum_0": {
+        "vlnv": "xilinx.com:ip:c_accum:12.0",
+        "xci_name": "ILA_DEBUG_c_accum_0_0",
+        "xci_path": "ip\\ILA_DEBUG_c_accum_0_0\\ILA_DEBUG_c_accum_0_0.xci",
+        "inst_hier_path": "c_accum_0",
+        "parameters": {
+          "Bypass": {
+            "value": "false"
+          },
+          "CE": {
+            "value": "false"
+          },
+          "Implementation": {
+            "value": "DSP48"
+          },
+          "Input_Type": {
+            "value": "Unsigned"
+          },
+          "Input_Width": {
+            "value": "16"
+          }
+        }
+      },
+      "c_counter_binary_0": {
+        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
+        "xci_name": "ILA_DEBUG_c_counter_binary_0_0",
+        "xci_path": "ip\\ILA_DEBUG_c_counter_binary_0_0\\ILA_DEBUG_c_counter_binary_0_0.xci",
+        "inst_hier_path": "c_counter_binary_0",
+        "parameters": {
+          "CE": {
+            "value": "false"
+          },
+          "Load": {
+            "value": "true"
+          },
+          "SCLR": {
+            "value": "true"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "ILA_DEBUG_xlconstant_0_0",
+        "xci_path": "ip\\ILA_DEBUG_xlconstant_0_0\\ILA_DEBUG_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "1"
+          },
+          "CONST_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "ILA_DEBUG_ila_0_0",
+        "xci_path": "ip\\ILA_DEBUG_ila_0_0\\ILA_DEBUG_ila_0_0.xci",
+        "inst_hier_path": "ila_0",
+        "parameters": {
+          "C_EN_STRG_QUAL": {
+            "value": "1"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "2"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE1_TYPE": {
+            "value": "0"
+          }
+        }
+      },
+      "register_0": {
+        "vlnv": "xilinx.com:module_ref:register:1.0",
+        "xci_name": "ILA_DEBUG_register_0_0",
+        "xci_path": "ip\\ILA_DEBUG_register_0_0\\ILA_DEBUG_register_0_0.xci",
+        "inst_hier_path": "register_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "register",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "ILA_DEBUG_i_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "i_reg": {
+            "direction": "I",
+            "left": "31",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": [
+                  "xilinx.com:interface:datatypes:1.0 {",
+                  "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum",
+                  "{} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format",
+                  "bool minimum {} maximum {}} value FALSE}}}} DATA_WIDTH 32",
+                  "}"
+                ],
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "o_debug": {
+            "direction": "O",
+            "left": "31",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": [
+                  "xilinx.com:interface:datatypes:1.0 {",
+                  "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum",
+                  "{} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format",
+                  "bool minimum {} maximum {}} value FALSE}}}} DATA_WIDTH 32",
+                  "}"
+                ],
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
+      }
+    },
+    "nets": {
+      "CLK_1": {
+        "ports": [
+          "i_clk",
+          "c_counter_binary_0/CLK",
+          "c_accum_0/CLK",
+          "ila_0/clk",
+          "register_0/i_clk"
+        ]
+      },
+      "LOAD_1": {
+        "ports": [
+          "LOAD",
+          "c_counter_binary_0/LOAD",
+          "ila_0/probe1"
+        ]
+      },
+      "SCLR_1": {
+        "ports": [
+          "SCLR",
+          "c_counter_binary_0/SCLR"
+        ]
+      },
+      "c_accum_0_Q": {
+        "ports": [
+          "c_accum_0/Q",
+          "register_0/i_reg"
+        ]
+      },
+      "c_counter_binary_0_Q": {
+        "ports": [
+          "c_counter_binary_0/Q",
+          "c_accum_0/B"
+        ]
+      },
+      "register_0_o_debug": {
+        "ports": [
+          "register_0/o_debug",
+          "ila_0/probe0"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "c_counter_binary_0/L"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Jul  6 15:29:56 2023
+# Process ID: 13820
+# Current directory: E:/VIVADO_2022/ARTIX_A7_35T/Axi_stream_debug_ILA/Axi_stream_debug_ILA.runs/ILA_DEBUG_c_accum_0_0_synth_1
+# Command line: vivado.exe -log ILA_DEBUG_c_accum_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ILA_DEBUG_c_accum_0_0.tcl
+# Log file: E:/VIVADO_2022/ARTIX_A7_35T/Axi_stream_debug_ILA/Axi_stream_debug_ILA.runs/ILA_DEBUG_c_accum_0_0_synth_1/ILA_DEBUG_c_accum_0_0.vds
+# Journal file: E:/VIVADO_2022/ARTIX_A7_35T/Axi_stream_debug_ILA/Axi_stream_debug_ILA.runs/ILA_DEBUG_c_accum_0_0_synth_1\vivado.jou
+# Running On: LAPTOP-GBNTDCHP, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 2, Host memory: 12791 MB
+#-----------------------------------------------------------
+source ILA_DEBUG_c_accum_0_0.tcl -notrace
