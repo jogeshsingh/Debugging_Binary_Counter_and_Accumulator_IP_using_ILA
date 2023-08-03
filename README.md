@@ -2,9 +2,11 @@
 Xilinx VIVADO IP (Binary counter , Accumulator) is debugged using ILA(Integrated Logic Analyzer) 
 
 # Block Design
+
 ![block_design](./block_design.jpg)
 
 # Elaborated Design
+
 
 ![elab_design_02](./elab_design_02.jpg)
 
