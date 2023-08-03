@@ -1,5 +1,12 @@
+
+
+
 # Debugging_Binary_Counter_and_Accumulator_IP_using_ILA
 Xilinx VIVADO IP (Binary counter , Accumulator) is debugged using ILA(Integrated Logic Analyzer) 
+This project could be loaded in xilinx vivado -: 
+go to ARTIX_A7_35T -> Axi_stream_debug_ILA     (Note-: it's not an axi stream project , rather project involving 
+                             blocks of binary counter and Accumulator IP )
+   
 
 # Block Design
 
